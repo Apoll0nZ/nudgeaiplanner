@@ -46,6 +46,11 @@
     .section-heading { max-width: 650px; margin-bottom: 38px; }
     .section-heading h2 { margin: 0 0 10px; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; letter-spacing: -.04em; }
     .section-heading p { margin: 0; color: var(--muted); }
+    .support-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; max-width: 720px; }
+    .support-card { display: block; padding: 24px 26px; border: 1px solid var(--line); border-radius: 18px; color: var(--ink); background: var(--card); text-decoration: none; box-shadow: 0 8px 22px rgba(45, 42, 33, .06); transition: transform .2s ease, box-shadow .2s ease; }
+    .support-card:hover, .support-card:focus-visible { transform: translateY(-3px); box-shadow: 0 14px 28px rgba(45, 42, 33, .11); }
+    .support-card small { display: block; margin-bottom: 5px; color: var(--muted); font-size: .78rem; font-weight: 700; letter-spacing: .08em; }
+    .support-card strong { font-size: 1.05rem; }
     .gallery {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -63,6 +68,7 @@
       .section { padding: 56px 0; }
       .gallery { grid-template-columns: 1fr; gap: 20px; }
       .gallery a { border-radius: 18px; }
+      .support-links { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -91,6 +97,25 @@
           <a href="preb2.png" target="_blank" rel="noopener" aria-label="アプリ紹介画像2を拡大表示"><img src="preb2.png" alt="Nudge AI Plannerのアプリ画面2"></a>
           <a href="preb3.png" target="_blank" rel="noopener" aria-label="アプリ紹介画像3を拡大表示"><img src="preb3.png" alt="Nudge AI Plannerのアプリ画面3"></a>
           <a href="preb4.png" target="_blank" rel="noopener" aria-label="アプリ紹介画像4を拡大表示"><img src="preb4.png" alt="Nudge AI Plannerのアプリ画面4"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="support">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>サポート</h2>
+          <p>アプリについてのご質問や不具合のご報告は、以下からご連絡ください。</p>
+        </div>
+        <div class="support-links">
+          <a class="support-card" href="https://x.com/apoll0ndev" target="_blank" rel="noopener">
+            <small>X</small>
+            <strong>@apoll0ndev</strong>
+          </a>
+          <a class="support-card" href="mailto:giruru05@gmail.com?subject=Nudge%20AI%20Planner%20%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">
+            <small>EMAIL</small>
+            <strong>giruru05@gmail.com</strong>
+          </a>
         </div>
       </div>
     </section>
