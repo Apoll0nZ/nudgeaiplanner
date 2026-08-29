@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nudge AI Planner — 頭の中の予定やタスクを、すぐに整理できるプランナー。">
+  <title>Nudge AI Planner</title>
+  <style>
+    :root {
+      --ink: #20221f;
+      --muted: #747871;
+      --paper: #f6f5f1;
+      --card: #fffefa;
+      --accent: #ee6b43;
+      --accent-soft: #ffe5d9;
+      --line: #e7e4dc;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+      line-height: 1.7;
+    }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: 0 auto; }
+    header { padding: 24px 0; }
+    .brand { color: var(--ink); text-decoration: none; font-weight: 800; letter-spacing: .08em; }
+    .hero { padding: 72px 0 88px; }
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+    h1 { max-width: 700px; margin: 0; font-size: clamp(2.3rem, 6vw, 4.8rem); line-height: 1.12; letter-spacing: -.06em; }
+    .hero p { max-width: 600px; margin: 24px 0 0; color: var(--muted); font-size: 1.08rem; }
+    .section { padding: 76px 0; border-top: 1px solid var(--line); }
+    .section-heading { max-width: 650px; margin-bottom: 38px; }
+    .section-heading h2 { margin: 0 0 10px; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; letter-spacing: -.04em; }
+    .section-heading p { margin: 0; color: var(--muted); }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .gallery a { display: block; border-radius: 22px; overflow: hidden; background: var(--card); box-shadow: 0 14px 34px rgba(45, 42, 33, .10); transition: transform .2s ease, box-shadow .2s ease; }
+    .gallery a:hover, .gallery a:focus-visible { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(45, 42, 33, .16); }
+    .gallery img { display: block; width: 100%; height: auto; }
+    footer { padding: 32px 0 48px; color: var(--muted); font-size: .85rem; }
+    @media (max-width: 680px) {
+      .wrap { width: min(100% - 28px, 520px); }
+      .hero { padding: 52px 0 64px; }
+      .section { padding: 56px 0; }
+      .gallery { grid-template-columns: 1fr; gap: 20px; }
+      .gallery a { border-radius: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <a class="brand" href="#top">NUDGE AI PLANNER</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">MAKE ROOM FOR WHAT MATTERS</span>
+        <h1>頭の中の「あとでやる」を、今日の一歩に。</h1>
+        <p>思いついたタスクや予定をすばやく整理して、無理なく前に進めるためのプランナーです。</p>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>主な機能</h2>
+          <p>Nudge AI Plannerの使い心地を、アプリの画面でご紹介します。</p>
+        </div>
+        <div class="gallery" aria-label="Nudge AI Planner アプリ紹介画像">
+          <a href="preb1.png" target="_blank" rel="noopener" aria-label="アプリ紹介画像1を拡大表示"><img src="preb1.png" alt="Nudge AI Plannerのアプリ画面1"></a>
+          <a href="preb2.png" target="_blank" rel="noopener" aria-label="アプリ紹介画像2を拡大表示"><img src="preb2.png" alt="Nudge AI Plannerのアプリ画面2"></a>
+          <a href="preb3.png" target="_blank" rel="noopener" aria-label="アプリ紹介画像3を拡大表示"><img src="preb3.png" alt="Nudge AI Plannerのアプリ画面3"></a>
+          <a href="preb4.png" target="_blank" rel="noopener" aria-label="アプリ紹介画像4を拡大表示"><img src="preb4.png" alt="Nudge AI Plannerのアプリ画面4"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">© Nudge AI Planner</footer>
+</body>
+</html>
